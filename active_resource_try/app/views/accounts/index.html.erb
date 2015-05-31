@@ -1,0 +1,8 @@
+<h1>Recipes#index</h1>
+
+<% @accounts.each do |account| %>
+<p>
+  <%= account.attributes %><br>
+  <%= link_to account.first_name, account %><br>
+</p>
+<% end %>
