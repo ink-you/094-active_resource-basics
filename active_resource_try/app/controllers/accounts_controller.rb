@@ -7,13 +7,22 @@ class AccountsController < ApplicationController
     @account = Account.find(params[:id])
   end
 
+  def edit
+    @account = Account.find(params[:id])
+  end
+
   def update
     @account = Account.find(params[:id])
-    @account.update(params.require(:account).permit(:name))
-    redirect_to 'show'
+    # @account.first_name = (params.require(:account).permit(:first_name)[:first_name])
+    # @account.save
+    @account.update_attributes(params.require(:account).permit(:first_name))
+    redirect_to account_url
+  end
+
+  def new
+    @account = Account.new
   end
 
   def create
-    
   end
 end
