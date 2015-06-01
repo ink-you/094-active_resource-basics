@@ -1,4 +1,4 @@
-http://railscasts.com/episodes/94-activeresource-basics
+http://railscasts.com/episodes/94-activeresource-basics  
 http://railscasts.com/episodes/95-more-on-activeresource
 
 + [responders](https://rubygems.org/gems/responders/versions/2.1.0)
