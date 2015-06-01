@@ -14,13 +14,17 @@ class AccountsController < ApplicationController
   def update
     @account = Account.find(params[:id])
     @account.update_attributes(params.require(:account).permit(:first_name))
-    redirect_to account_url
+    @account.save
+    redirect_to account_url(@account)
   end
 
   def new
-    @account = Account.new
+    @account = Account.build
   end
 
   def create
+    @account = Account.new(params.require(:account).permit(:first_name))
+    @account.save
+    redirect_to account_url(@account)
   end
 end

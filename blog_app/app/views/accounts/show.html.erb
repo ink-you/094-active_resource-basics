@@ -1,6 +1,9 @@
+<h1>Accounts#show</h1>
+
 <p>
   <%= @account.attributes %><br>
   <%= @account.first_name %><br>
 </p>
 
-<%= link_to "edit", edit_account_path(@account) %>
+<%= link_to "Edit", edit_account_path(@account) %> |
+<%= link_to 'Back', accounts_path %>
