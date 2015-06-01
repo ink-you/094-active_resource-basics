@@ -1,5 +1,5 @@
 require 'active_resource'
 
 class Account < ActiveResource::Base
-  self.site = "http://localhost:3000/"
+  self.site = "http://mister:example@localhost:3000/"
 end
