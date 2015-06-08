@@ -2,7 +2,9 @@
 
 <% @accounts.each do |account| %>
 <p>
-  <%= account.attributes %><br>
+  <% account.attributes.each do |key, value| %>
+    <%= "#{key} = #{value}" %><br>
+  <% end %>
   <%= link_to account.first_name, account %><br>
 </p>
 <% end %>

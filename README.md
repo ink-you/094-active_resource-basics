@@ -6,8 +6,8 @@ http://railscasts.com/episodes/95-more-on-activeresource
 + [Ruby template handler](https://github.com/rails/rails/blob/861b70e92f4a1fc0e465ffcf2ee62680519c8f6f/actionview/lib/action_view/template/handlers.rb)
 
 ```sh
-# store_app
+# store_app ( views json file, show and index )
 rails s -p 3000
-# blog_app
+# blog_app ( ActiveResource model. no db )
 rails server -p 3001
 ```
