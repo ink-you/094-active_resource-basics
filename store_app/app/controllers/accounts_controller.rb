@@ -7,14 +7,16 @@ class AccountsController < ApplicationController
   # GET /accounts.json
   def index
     @accounts = Account.all
-    respond_with @accounts
+    respond_to do |format|
+      format.json {render json: @accounts}
+    end
   end
 
   # GET /accounts/1
   # GET /accounts/1.json
   def show
     # set_account
-    respond_with @account
+    render json: @account
   end
 
   # GET /accounts/new

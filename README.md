@@ -11,3 +11,5 @@ rails s -p 3000
 # blog_app ( ActiveResource model. no db )
 rails server -p 3001
 ```
+
+**how to JSON CRUD ?**
